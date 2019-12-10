@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formula 1 Calendar</title>
+
+  <!-- Main StyleSheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Responsive Stylesheet -->
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <!-- Font: Tomorrow -->
+   <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet"></head>
+
+   <!-- Font: IBM Plex -->
+   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Section: Navbar -->
+  <header>
+    <nav id="navbar">
+      <h1 class="logo">Formula 1 Calendar</h1>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="root/schedule/2020.html">Schedule</a></li>
+        <li><a href="root/standings/standings.html">Standings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section: Showcase -->
+  <Section id="showcase">
+    <div class="showcase_overlay">
+      <div class="showcase_content">
+        <!-- Grand Prix Flag -->
+        <img class="flags_img" src="/img/flags/australia.png" alt="Australian Flag">
+        <!-- Grand Prix -->
+        <h1 class="title">Australian Grand Prix</h1>
+        <!-- Date -->
+        <h2 class="sub-title">Sunday March 15th, 2020</h2>
+
+        <!-- Countdown Clock -->
+        <div class="clock_container">
+        <ul>
+          <li class = "clock_list"><span id="days"></span>days</li>
+          <li class = "clock_list"><span id="hours"></span>Hours</li>
+          <li class = "clock_list"><span id="minutes"></span>Minutes</li>
+          <li class = "clock_list"><span id="seconds"></span>Seconds</li>
+        </ul>
+    
+      </div>
+
+          <!-- Button -->
+          <a href="root/schedule/2020.html" class="btn">2020 Schedule</a></div>
+
+      </div>
+    </div>
+
+  </Section>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

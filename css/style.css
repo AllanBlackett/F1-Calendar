@@ -1,0 +1,150 @@
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+ 
+  background: #2b2d2f;
+  
+}
+
+/* Utility Classes */
+
+a {
+  text-decoration: none;
+}
+
+
+/* Navbar */
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: rgba(51, 51, 51, 1);
+  color: #fff;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+}
+
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+
+}
+
+#navbar a:hover {
+  border-radius: 2px;
+  border: solid 0.5px #fff;
+}
+
+/* Showcase */
+
+#showcase {
+  height: 100vh;
+  color: #fff;
+}
+
+#showcase .showcase_overlay {
+  display: flex;
+  /* flex-direction: column; */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+
+}
+
+.showcase_content {
+  position: relative;
+  top: -40px;
+}
+
+.flags_img {
+  border-radius: 3px;
+  width: 100%;
+  max-width: 10.5rem;
+  max-height: 5rem;
+  height: auto;
+  margin: 6rem 0 10px 0;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.sub-title {
+  font-size: 1.6em;
+  margin: 1em 0 1px 0;
+  font-weight: lighter;
+}
+
+/* Countdown clock */
+
+
+.clock_list {
+  display: inline-block;
+  font-size: 1em;
+  list-style-type: none;
+  padding: 0 1em 1em 1em;
+  text-transform: uppercase;
+}
+
+.clock_list span {
+  display: block;
+  font-size: 3rem;
+  font-family: 'Tomorrow', sans-serif
+}
+
+
+/* Button */
+.btn {
+	box-shadow:inset 0px 1px 4px 0px #fff;
+	background-color: rgba(51, 51, 51, 0);
+	border-radius: 5px;
+	border: 1px solid #fff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size: 30px;
+  padding:10px 20px;
+  margin-top: 30px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #fff;
+}
+.btn:hover {
+	background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+	background-color:#ce0100;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+
+@media(max-height: 568px) {
+  #showcase .showcase-content {
+    margin-top: -2rem;
+    top: 140px;
+  }
+}
+
+
+
+
+
+
+
